@@ -16,6 +16,9 @@ public class Store {
   // main method
   public static void main(String[] args) {
     Store lemonadeStand = new Store("Lemonade");
-    
+    //calling the advertise() method 3 times
+    lemonadeStand.advertise();
+    lemonadeStand.advertise();
+    lemonadeStand.advertise();
   }
 }
