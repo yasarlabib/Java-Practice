@@ -11,8 +11,8 @@ public class Reservation {
                   System.out.println("Invalid reservation!");
             }
             guestCount = count;
-  		    restaurantCapacity = capacity;
-  		    isRestaurantOpen = open;
+  	        restaurantCapacity = capacity;
+  	        isRestaurantOpen = open;
     }  
 
     // the confirmReservation() method checks to see:
