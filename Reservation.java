@@ -31,9 +31,13 @@ public class Reservation {
             }
     }
 
-    // The informUser() method will always print the statement for now (will be fixed later)
+    // The informUser() method will let the user know if their reservation was confirmed or not
     public void informUser() {
-            System.out.println("Please enjoy your meal!");
+            if(!isConfirmed){
+                System.out.println("Unable to confirm reservation, please contact restaurant.");
+            } else{
+                System.out.println("Please enjoy your meal!");
+            }
     }
   
     public static void main(String[] args) {
