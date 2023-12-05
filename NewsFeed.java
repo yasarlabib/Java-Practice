@@ -1,3 +1,6 @@
+// importing Arrays package
+import java.util.Arrays;
+
 public class Newsfeed {
 
     // constructor for the NewsFeed class 
@@ -15,7 +18,7 @@ public class Newsfeed {
         Newsfeed sampleFeed = new Newsfeed();
         // creating an array that holds the topics 
         String[] topics = sampleFeed.getTopics();
-        // printing out the topics 
-        System.out.println(topics);
+        // printing out the topics by calling the Arrays.toString method
+        System.out.println(Arrays.toString(topics));
     }
 }
