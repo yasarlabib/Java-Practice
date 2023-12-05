@@ -7,9 +7,17 @@ public class Newsfeed {
     String[] topics = {"Opinion", "Tech", "Science", "Health"};
     // view count array
     int[] views = {0, 0, 0, 0};
+    String[] favoriteArticles;
 
     // constructor for the NewsFeed class 
     public Newsfeed(){
+        // initializing favoriteArticles array
+        favoriteArticles = new String[10];
+    }
+
+    public void setFavoriteArticle(int favoriteIndex, String newArticle){
+    // add newArticle to favoriteArticles
+    favoriteArticles[favoriteIndex] = newArticle;
     }
 
     // getTopics will return an array of Strings that holds the topics 
