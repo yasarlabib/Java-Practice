@@ -23,6 +23,12 @@ public class ATM{
             totalMoney -= amountToWithdraw;
         }
     }
+
+    // averageMoney() is a static method 
+    public static void averageMoney(){
+        System.out.println(totalMoney/numATMs); 
+        // System.out.println(this.money); // would cause an error because the variable is non-static 
+    }
   
     // main method 
     public static void main(String[] args){
@@ -46,5 +52,8 @@ public class ATM{
         System.out.println(ATM.totalMoney); // prints 800
         System.out.println(firstATM.totalMoney); // prints 800
         System.out.println(secondATM.totalMoney); // prints 800
+
+        // calling a static method 
+        ATM.averageMoney();
     }
 }
